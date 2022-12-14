@@ -1,0 +1,230 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(Gilroy-Black.otf);
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(Gilroy-BlackItalic.otf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(Gilroy-Bold.otf);
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(Gilroy-BoldItalic.otf);
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(Gilroy-Extrabold.otf);
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(Gilroy-ExtraboldItalic.otf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(Gilroy-Heavy.otf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(Gilroy-HeavyItalic.otf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(Gilroy-Light.otf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(Gilroy-LightItalic.otf);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+#main{display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(106, 241, 106);
+    position: relative;
+    overflow: hidden;
+}
+#me{
+    border: 20px black solid;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    /* position: relative;
+    overflow: auto; */
+}
+#upper{
+    font-family: Gilroy;
+    text-transform: uppercase;
+    padding: 20px;
+    width: 100%;
+    height: 20%;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box{
+    width: 6vw;
+    height: 9vh;
+    background-color: white;
+    border: solid rgb(106, 241, 106) 5px;
+    border-radius: 20px;
+    /* color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+#left{
+    display: flex;
+    align-items: center;
+}
+#middle{
+    display: flex;
+    align-items: center;
+}
+#right{
+    display: flex;
+    align-items: center;
+}
+#bubbles{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 10px 50px;
+
+    
+}
+#bubbles h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: green;
+}
+.bubble{
+    width: 92px;
+    height: 70px;
+    background-color: white;
+    border: 5px green solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left : 10px;
+    cursor: pointer;
+    padding: 40px ;
+}
+
+#start
+{
+    border: 20px black solid;
+    width: 90%;
+    height: 90%;
+    background-image: url(https://imgs.search.brave.com/yFlC6LQCK2pgR1tcSml8KgFwjMUky7O_SSQ-8pnoPAM/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9zLW1l/ZGlhLWNhY2hlLWFr/MC5waW5pbWcuY29t/L29yaWdpbmFscy85/OC8yZC9kYi85ODJk/ZGI2OGU0NTc1MjAw/MTQzODY5MDA3MGJk/NmNjMC5qcGc);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start_button
+{
+    width: 10vw;
+    background-color: rgb(106, 241, 106);
+    height: 10vh;
+    font-size: 2vw;
+    font-family: Gilroy;
+    font-weight: 700;
+    color: white;
+    border-radius: 20px;
+    
+}
+
+#bubbles h1
+{
+    font-size: 5vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+#bubbles span
+{
+    left: -15%;
+    position: absolute;
+    width: 100vw;
+}
+
+#upper h3
+{
+    color: white;
+    font-size: 30px;
+}
+
+@media (max-width : 500px)
+{
+    #start_button {
+        width: 40vw;
+        height: 10vh;
+        font-size: 12vw;
+    }
+    .bubble {
+        width: 47px;
+        height: 45px;
+        width: 36px;
+        height: 35px;
+        padding: 0px;
+    }
+    /* #me
+    {
+        position: relative;
+        overflow: hidden;
+    } */
+    #bubbles
+    {
+        padding: 0px 15px;
+    }
+    #upper h3 {
+        color: white;
+        font-size: 13px;
+    }
+    .box{
+        font-size: 25px;
+        width: 11vw;
+    }    
+    #upper {
+        padding: 0px;
+        font-weight: 300;
+    }
+    #bubbles h1
+    {
+        font-size: 40px;
+    }
+    #bubbles span 
+    {
+        left: -25%;
+    }
+}
